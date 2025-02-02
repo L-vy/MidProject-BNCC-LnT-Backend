@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php';
+include 'store_book.php';
 
 $id = $_GET['id'] ?? null;
 $sql = "SELECT * FROM books WHERE id = ?";

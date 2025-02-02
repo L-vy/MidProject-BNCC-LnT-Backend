@@ -20,7 +20,7 @@ $result = $conn->query($sql);
         <a class="navbar-brand" href="#">Dashboard</a>
         <div class="ms-auto">
           <!-- BACK TO LOG IN PAGE -->
-          <a href="#" class="btn btn-danger">Logout</a>
+          <a href="#" class="btn btn-danger" onclick = "confirmLogOut()">Logout</a>
         </div>
       </div>
     </nav>
@@ -137,6 +137,13 @@ $result = $conn->query($sql);
             let confirmAction = confirm("Are you sure you want to delete this book?");
             if (confirmAction) {
                 window.location.href = "delete_book.php?id=" + bookId;
+            }
+        }
+
+        function confirmLogOut() {
+            let confirmAction = confirm("Are you sure you want to Log Out?");
+            if (confirmAction) {
+                window.location.href = "#"; // ubah ke log in page (.php)
             }
         }
     </script>
