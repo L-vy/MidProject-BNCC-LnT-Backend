@@ -27,7 +27,7 @@
                 <label for="number_of_page" class="form-label">Number of Pages</label>
                 <input type="number" class="form-control" placeholder = "Does not include cover" name="number_of_page" required>
             </div>
-            <button type="submit" class="btn btn-primary">Add Book</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='dashboard.php';">Add Book</button>
         </form>
     </div>
 
