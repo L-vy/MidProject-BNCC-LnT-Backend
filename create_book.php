@@ -33,9 +33,13 @@
                     <label class="form-label">Book Cover</label>
                     <input type="file" name="book_cover" class="form-control" accept="image/*" required>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Add Book</button>
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">Add Book</button>
+                    <a href="dashboard.php" class="btn btn-secondary">Cancel</a>
+                </div>
             </form>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
