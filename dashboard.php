@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION["user"])) {
+    header("Location: log_in.php");
+    exit();
+}
+?>
+
+<?php
     include 'connect.php';
     $sql = "SELECT * FROM books";
     $result = $conn->query($sql);
