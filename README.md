@@ -1,4 +1,4 @@
-# Library Management System Backend
+# Library Management System Project
 
 This repository contains the backend system for a Library Management Application, built using PHP and MySQL. It handles database connections, user authentication, and full book management.
 
